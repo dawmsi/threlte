@@ -1,7 +1,8 @@
 {
-  "name": "",
+  "name": "threlte",
   "type": "module",
   "version": "0.0.1",
+  "private": true,
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -10,6 +11,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.1.1"
-  }
+    "@astrojs/svelte": "^5.0.3",
+    "@threlte/core": "^7.0.12",
+    "@threlte/extras": "^8.1.1",
+    "@types/three": "^0.160.0",
+    "astro": "^4.1.1",
+    "svelte": "^4.2.8",
+    "three": "^0.160.0",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {}
 }

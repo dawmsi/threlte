@@ -1,0 +1,36 @@
+---
+import AppTree from "../components/AppTree.svelte";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body>
+    <a href="/" class="backBtn">{`< back`}</a>
+    <AppTree client:only />
+  </body>
+</html>
+
+<style>
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    height: 100svh;
+    width: 100%;
+  }
+  .backBtn {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 5;
+    color: white;
+  }
+</style>
